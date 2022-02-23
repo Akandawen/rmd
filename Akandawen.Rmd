@@ -1,0 +1,32 @@
+---
+title: "Homework"
+author: "Akandawen"
+date: '2022-02-22'
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Cars with four cylinders
+
+```{r four}
+four <- mtcars[mtcars$cyl == "4",]
+four
+```
+
+
+```{r plotfour}
+plot(four$mpg,four$disp, pch = 16, frame = FALSE, col = "blue", cex=0.5,
+     ylab="Engine Displacement", xlab = "Gas Mileage")
+```
+
+```{r six}
+six <- mtcars[mtcars$cyl == "6",]
+six
+```
+
+```{r plotsix}
+plot(six$mpg,six$disp, pch = 16, frame = FALSE, col = "blue", cex=0.5,
+     ylab="Engine Displacement", xlab = "Gas Mileage")
+```
